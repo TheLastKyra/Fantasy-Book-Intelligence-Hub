@@ -1,0 +1,28 @@
+Development Order
+
+Phase 1
+Environment Setup
+
+Phase 2
+Google Books API Connection
+
+Phase 3
+Data Extraction
+
+Phase 4
+Data Cleaning
+
+Phase 5
+Database Storage
+
+Phase 6
+Dashboard
+
+Phase 7
+Automation
+
+Phase 8
+Testing
+
+Phase 9
+Final Demonstration
