@@ -1,0 +1,34 @@
+PROJECT OVERVIEW
+
+Project:
+Fantasy Book Intelligence Hub
+
+Purpose:
+Build an automated data pipeline that collects information about fantasy books and authors using the Google Books API.
+
+Core Features:
+
+- Data extraction
+- Data validation
+- Data transformation
+- SQLite database storage
+- Dashboard visualisation
+- Daily automation
+- Logging
+- Error handling
+
+Technology:
+
+Python
+Pandas
+Google Books API
+SQLite
+Streamlit
+
+Success Criteria:
+
+1. Retrieve fantasy book data.
+2. Store data successfully.
+3. Display useful visualisations.
+4. Run automatically.
+5. Demonstrate an end-to-end pipeline.
