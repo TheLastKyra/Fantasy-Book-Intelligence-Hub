@@ -1,0 +1,278 @@
+2026-11-20 20:34:26 | INFO | logger_test | Logger is working - this is an INFO message.
+2026-11-20 20:34:26 | WARNING | logger_test | This is a WARNING message.
+2026-11-20 20:34:26 | ERROR | logger_test | This is an ERROR message.
+2026-11-20 20:54:08 | INFO | __main__ | Searching Google Books for 'Mistborn' (start_index=0)
+2026-11-20 20:54:09 | ERROR | __main__ | HTTP error occurred: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/books/v1/volumes?q=Mistborn&maxResults=5&startIndex=0
+2026-11-20 20:59:57 | INFO | __main__ | Searching Google Books for 'Red Rising' (start_index=0)
+2026-11-20 20:59:58 | ERROR | __main__ | HTTP error occurred: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/books/v1/volumes?q=Red+Rising&maxResults=1&startIndex=0
+2026-11-20 21:09:37 | INFO | __main__ | Searching Open Library for 'Red Rising'
+2026-11-20 21:09:41 | INFO | __main__ | Success. Open Library returned 912 matches.
+2026-11-21 19:38:55 | INFO | __main__ | Starting search for: Red Rising
+2026-11-21 19:38:55 | INFO | api_client | Searching Open Library for 'Red Rising'
+2026-11-21 19:38:58 | INFO | api_client | Success. Open Library returned 912 matches.
+2026-11-21 19:38:58 | INFO | __main__ | Retrieved 5 books for 'Red Rising'
+2026-11-21 19:38:58 | INFO | __main__ | Starting search for: Mistborn
+2026-11-21 19:38:58 | INFO | api_client | Searching Open Library for 'Mistborn'
+2026-11-21 19:39:00 | INFO | api_client | Success. Open Library returned 31 matches.
+2026-11-21 19:39:00 | INFO | __main__ | Retrieved 5 books for 'Mistborn'
+2026-11-21 19:39:00 | INFO | __main__ | Starting search for: The Poppy War
+2026-11-21 19:39:00 | INFO | api_client | Searching Open Library for 'The Poppy War'
+2026-11-21 19:39:01 | INFO | api_client | Success. Open Library returned 104 matches.
+2026-11-21 19:39:01 | INFO | __main__ | Retrieved 5 books for 'The Poppy War'
+2026-11-21 19:39:01 | INFO | __main__ | Starting search for: Throne of Glass
+2026-11-21 19:39:01 | INFO | api_client | Searching Open Library for 'Throne of Glass'
+2026-11-21 19:39:03 | INFO | api_client | Success. Open Library returned 91 matches.
+2026-11-21 19:39:03 | INFO | __main__ | Retrieved 5 books for 'Throne of Glass'
+2026-11-21 19:39:03 | INFO | __main__ | Starting search for: The Lightbringer Series
+2026-11-21 19:39:03 | INFO | api_client | Searching Open Library for 'The Lightbringer Series'
+2026-11-21 19:39:04 | INFO | api_client | Success. Open Library returned 3 matches.
+2026-11-21 19:39:04 | INFO | __main__ | Retrieved 3 books for 'The Lightbringer Series'
+2026-11-21 19:39:04 | INFO | __main__ | Starting search for: Twilight of the Gods
+2026-11-21 19:39:04 | INFO | api_client | Searching Open Library for 'Twilight of the Gods'
+2026-11-21 19:39:05 | INFO | api_client | Success. Open Library returned 344 matches.
+2026-11-21 19:39:05 | INFO | __main__ | Retrieved 5 books for 'Twilight of the Gods'
+2026-11-21 19:39:05 | INFO | __main__ | Extraction complete. Total books collected: 28
+2026-11-21 20:01:57 | INFO | src.extract | Starting search for: Red Rising
+2026-11-21 20:01:57 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-21 20:02:01 | INFO | src.api_client | Success. Open Library returned 912 matches.
+2026-11-21 20:02:01 | INFO | src.extract | Retrieved 5 books for 'Red Rising'
+2026-11-21 20:02:01 | INFO | src.extract | Starting search for: Mistborn
+2026-11-21 20:02:01 | INFO | src.api_client | Searching Open Library for 'Mistborn'
+2026-11-21 20:02:11 | ERROR | src.api_client | API request failed: HTTPSConnectionPool(host='openlibrary.org', port=443): Max retries exceeded with url: /search.json?q=Mistborn&limit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='openlibrary.org', port=443) at 0x21faa2dbc50>, 'Connection to openlibrary.org timed out. (connect timeout=10)'))
+2026-11-21 20:02:11 | WARNING | src.extract | No data returned for 'Mistborn'
+2026-11-21 20:02:11 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-21 20:02:11 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-21 20:02:21 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-21 20:02:21 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-21 20:02:21 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-21 20:02:21 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-21 20:02:22 | ERROR | src.api_client | API request failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-11-21 20:02:22 | WARNING | src.extract | No data returned for 'Throne of Glass'
+2026-11-21 20:02:22 | INFO | src.extract | Starting search for: The Lightbringer Series
+2026-11-21 20:02:22 | INFO | src.api_client | Searching Open Library for 'The Lightbringer Series'
+2026-11-21 20:02:25 | ERROR | src.api_client | API request failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-11-21 20:02:25 | WARNING | src.extract | No data returned for 'The Lightbringer Series'
+2026-11-21 20:02:25 | INFO | src.extract | Starting search for: Twilight of the Gods
+2026-11-21 20:02:25 | INFO | src.api_client | Searching Open Library for 'Twilight of the Gods'
+2026-11-21 20:02:27 | INFO | src.api_client | Success. Open Library returned 344 matches.
+2026-11-21 20:02:27 | INFO | src.extract | Retrieved 5 books for 'Twilight of the Gods'
+2026-11-21 20:02:27 | INFO | src.extract | Extraction complete. Total books collected: 15
+2026-11-21 20:02:27 | INFO | src.clean | Cleaning complete. Records remaining: 15
+2026-11-21 20:06:37 | INFO | src.extract | Starting search for: Red Rising
+2026-11-21 20:06:37 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-21 20:06:47 | ERROR | src.api_client | API request failed: HTTPSConnectionPool(host='openlibrary.org', port=443): Max retries exceeded with url: /search.json?q=Red+Rising&limit=5 (Caused by ConnectTimeoutError(<HTTPSConnection(host='openlibrary.org', port=443) at 0x2e273b4d940>, 'Connection to openlibrary.org timed out. (connect timeout=10)'))
+2026-11-21 20:06:47 | WARNING | src.extract | No data returned for 'Red Rising'
+2026-11-21 20:06:47 | INFO | src.extract | Starting search for: Mistborn
+2026-11-21 20:06:47 | INFO | src.api_client | Searching Open Library for 'Mistborn'
+2026-11-21 20:06:48 | ERROR | src.api_client | API request failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-11-21 20:06:48 | WARNING | src.extract | No data returned for 'Mistborn'
+2026-11-21 20:06:48 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-21 20:06:48 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-21 20:06:52 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-21 20:06:52 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-21 20:06:52 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-21 20:06:52 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-21 20:06:57 | INFO | src.api_client | Success. Open Library returned 91 matches.
+2026-11-21 20:06:57 | INFO | src.extract | Retrieved 5 books for 'Throne of Glass'
+2026-11-21 20:06:57 | INFO | src.extract | Starting search for: The Lightbringer Series
+2026-11-21 20:06:57 | INFO | src.api_client | Searching Open Library for 'The Lightbringer Series'
+2026-11-21 20:06:58 | ERROR | src.api_client | API request failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-11-21 20:06:58 | WARNING | src.extract | No data returned for 'The Lightbringer Series'
+2026-11-21 20:06:58 | INFO | src.extract | Starting search for: Twilight of the Gods
+2026-11-21 20:06:58 | INFO | src.api_client | Searching Open Library for 'Twilight of the Gods'
+2026-11-21 20:07:01 | INFO | src.api_client | Success. Open Library returned 344 matches.
+2026-11-21 20:07:01 | INFO | src.extract | Retrieved 5 books for 'Twilight of the Gods'
+2026-11-21 20:07:01 | INFO | src.extract | Extraction complete. Total books collected: 15
+2026-11-21 20:07:01 | INFO | src.clean | Cleaning complete. Records remaining: 15
+2026-11-21 20:31:48 | INFO | src.extract | Starting search for: Red Rising
+2026-11-21 20:31:48 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-21 20:31:50 | INFO | src.api_client | Success. Open Library returned 912 matches.
+2026-11-21 20:31:50 | INFO | src.extract | Retrieved 5 books for 'Red Rising'
+2026-11-21 20:31:50 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-21 20:31:50 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-21 20:31:52 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-21 20:31:52 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-21 20:31:52 | INFO | src.extract | Starting search for: The Stormlight Archive
+2026-11-21 20:31:52 | INFO | src.api_client | Searching Open Library for 'The Stormlight Archive'
+2026-11-21 20:31:54 | INFO | src.api_client | Success. Open Library returned 31 matches.
+2026-11-21 20:31:54 | INFO | src.extract | Retrieved 5 books for 'The Stormlight Archive'
+2026-11-21 20:31:54 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-21 20:31:54 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-21 20:31:56 | INFO | src.api_client | Success. Open Library returned 91 matches.
+2026-11-21 20:31:56 | INFO | src.extract | Retrieved 5 books for 'Throne of Glass'
+2026-11-21 20:31:56 | INFO | src.extract | Starting search for: Dune
+2026-11-21 20:31:56 | INFO | src.api_client | Searching Open Library for 'Dune'
+2026-11-21 20:31:59 | INFO | src.api_client | Success. Open Library returned 48275 matches.
+2026-11-21 20:31:59 | INFO | src.extract | Retrieved 5 books for 'Dune'
+2026-11-21 20:31:59 | INFO | src.extract | Starting search for: The Bloodsworn Saga
+2026-11-21 20:31:59 | INFO | src.api_client | Searching Open Library for 'The Bloodsworn Saga'
+2026-11-21 20:32:00 | INFO | src.api_client | Success. Open Library returned 3 matches.
+2026-11-21 20:32:00 | INFO | src.extract | Retrieved 3 books for 'The Bloodsworn Saga'
+2026-11-21 20:32:00 | INFO | src.extract | Extraction complete. Total books collected: 28
+2026-11-21 20:32:00 | INFO | src.clean | Cleaning complete. Records remaining: 28
+2026-11-21 20:36:46 | INFO | src.extract | Starting search for: Red Rising
+2026-11-21 20:36:46 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-21 20:36:47 | INFO | src.api_client | Success. Open Library returned 912 matches.
+2026-11-21 20:36:47 | INFO | src.extract | Retrieved 5 books for 'Red Rising'
+2026-11-21 20:36:47 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-21 20:36:47 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-21 20:36:51 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-21 20:36:51 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-21 20:36:51 | INFO | src.extract | Starting search for: The Stormlight Archive
+2026-11-21 20:36:51 | INFO | src.api_client | Searching Open Library for 'The Stormlight Archive'
+2026-11-21 20:36:52 | INFO | src.api_client | Success. Open Library returned 31 matches.
+2026-11-21 20:36:52 | INFO | src.extract | Retrieved 5 books for 'The Stormlight Archive'
+2026-11-21 20:36:52 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-21 20:36:52 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-21 20:36:54 | INFO | src.api_client | Success. Open Library returned 91 matches.
+2026-11-21 20:36:54 | INFO | src.extract | Retrieved 5 books for 'Throne of Glass'
+2026-11-21 20:36:54 | INFO | src.extract | Starting search for: Dune
+2026-11-21 20:36:54 | INFO | src.api_client | Searching Open Library for 'Dune'
+2026-11-21 20:36:55 | INFO | src.api_client | Success. Open Library returned 48275 matches.
+2026-11-21 20:36:55 | INFO | src.extract | Retrieved 5 books for 'Dune'
+2026-11-21 20:36:55 | INFO | src.extract | Starting search for: The Bloodsworn Saga
+2026-11-21 20:36:55 | INFO | src.api_client | Searching Open Library for 'The Bloodsworn Saga'
+2026-11-21 20:36:56 | INFO | src.api_client | Success. Open Library returned 3 matches.
+2026-11-21 20:36:56 | INFO | src.extract | Retrieved 3 books for 'The Bloodsworn Saga'
+2026-11-21 20:36:56 | INFO | src.extract | Extraction complete. Total books collected: 28
+2026-11-21 20:36:56 | INFO | src.clean | Cleaning complete. Records remaining: 28
+2026-11-21 20:48:45 | INFO | src.extract | Starting search for: Red Rising
+2026-11-21 20:48:45 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-21 20:48:47 | INFO | src.api_client | Success. Open Library returned 912 matches.
+2026-11-21 20:48:47 | INFO | src.extract | Retrieved 5 books for 'Red Rising'
+2026-11-21 20:48:47 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-21 20:48:47 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-21 20:48:53 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-21 20:48:53 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-21 20:48:53 | INFO | src.extract | Starting search for: The Stormlight Archive
+2026-11-21 20:48:53 | INFO | src.api_client | Searching Open Library for 'The Stormlight Archive'
+2026-11-21 20:48:55 | INFO | src.api_client | Success. Open Library returned 31 matches.
+2026-11-21 20:48:55 | INFO | src.extract | Retrieved 5 books for 'The Stormlight Archive'
+2026-11-21 20:48:55 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-21 20:48:55 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-21 20:48:57 | INFO | src.api_client | Success. Open Library returned 91 matches.
+2026-11-21 20:48:57 | INFO | src.extract | Retrieved 5 books for 'Throne of Glass'
+2026-11-21 20:48:57 | INFO | src.extract | Starting search for: Dune
+2026-11-21 20:48:57 | INFO | src.api_client | Searching Open Library for 'Dune'
+2026-11-21 20:49:00 | INFO | src.api_client | Success. Open Library returned 48275 matches.
+2026-11-21 20:49:00 | INFO | src.extract | Retrieved 5 books for 'Dune'
+2026-11-21 20:49:00 | INFO | src.extract | Starting search for: The Bloodsworn Saga
+2026-11-21 20:49:00 | INFO | src.api_client | Searching Open Library for 'The Bloodsworn Saga'
+2026-11-21 20:49:02 | INFO | src.api_client | Success. Open Library returned 3 matches.
+2026-11-21 20:49:02 | INFO | src.extract | Retrieved 3 books for 'The Bloodsworn Saga'
+2026-11-21 20:49:02 | INFO | src.extract | Extraction complete. Total books collected: 28
+2026-11-21 20:49:02 | INFO | src.clean | Cleaning complete. Records remaining: 28
+2026-11-21 20:49:02 | INFO | src.database | Connecting to database: C:\Users\clari\OneDrive\AutoData Solutions\Fantasy-Book-Intelligence-Hub\data\fantasy_books.db
+2026-11-21 20:49:02 | INFO | src.database | Saved 28 rows to the 'books' table.
+2026-11-21 20:49:02 | INFO | src.database | Database connection closed.
+2026-11-22 10:09:22 | INFO | __main__ | === Pipeline started ===
+2026-11-22 10:09:22 | INFO | __main__ | Step 1/3: Extracting book data...
+2026-11-22 10:09:22 | INFO | src.extract | Starting search for: Red Rising
+2026-11-22 10:09:22 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-22 10:09:23 | INFO | src.api_client | Success. Open Library returned 912 matches.
+2026-11-22 10:09:23 | INFO | src.extract | Retrieved 5 books for 'Red Rising'
+2026-11-22 10:09:23 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-22 10:09:23 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-22 10:09:25 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-22 10:09:25 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-22 10:09:25 | INFO | src.extract | Starting search for: The Stormlight Archive
+2026-11-22 10:09:25 | INFO | src.api_client | Searching Open Library for 'The Stormlight Archive'
+2026-11-22 10:09:25 | INFO | src.api_client | Success. Open Library returned 31 matches.
+2026-11-22 10:09:26 | INFO | src.extract | Retrieved 5 books for 'The Stormlight Archive'
+2026-11-22 10:09:26 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-22 10:09:26 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-22 10:09:27 | INFO | src.api_client | Success. Open Library returned 91 matches.
+2026-11-22 10:09:27 | INFO | src.extract | Retrieved 5 books for 'Throne of Glass'
+2026-11-22 10:09:27 | INFO | src.extract | Starting search for: Dune
+2026-11-22 10:09:27 | INFO | src.api_client | Searching Open Library for 'Dune'
+2026-11-22 10:09:29 | INFO | src.api_client | Success. Open Library returned 48275 matches.
+2026-11-22 10:09:29 | INFO | src.extract | Retrieved 5 books for 'Dune'
+2026-11-22 10:09:29 | INFO | src.extract | Starting search for: The Bloodsworn Saga
+2026-11-22 10:09:29 | INFO | src.api_client | Searching Open Library for 'The Bloodsworn Saga'
+2026-11-22 10:09:30 | INFO | src.api_client | Success. Open Library returned 3 matches.
+2026-11-22 10:09:30 | INFO | src.extract | Retrieved 3 books for 'The Bloodsworn Saga'
+2026-11-22 10:09:30 | INFO | src.extract | Extraction complete. Total books collected: 28
+2026-11-22 10:09:30 | INFO | __main__ | Extraction finished.
+2026-11-22 10:09:30 | INFO | __main__ | Step 2/3: Cleaning book data...
+2026-11-22 10:09:30 | INFO | src.clean | Cleaning complete. Records remaining: 28
+2026-11-22 10:09:30 | INFO | __main__ | Cleaning finished. Rows ready to save: 28
+2026-11-22 10:09:30 | INFO | __main__ | Step 3/3: Saving data to the database...
+2026-11-22 10:09:30 | INFO | src.database | Connecting to database: C:\Users\clari\OneDrive\AutoData Solutions\Fantasy-Book-Intelligence-Hub\data\fantasy_books.db
+2026-11-22 10:09:30 | INFO | src.database | Saved 28 rows to the 'books' table.
+2026-11-22 10:09:30 | INFO | src.database | Database connection closed.
+2026-11-22 10:09:30 | INFO | __main__ | Saving finished.
+2026-11-22 10:09:30 | INFO | __main__ | === Pipeline completed successfully ===
+2026-11-22 11:08:52 | INFO | __main__ | === Pipeline started ===
+2026-11-22 11:08:52 | INFO | __main__ | Step 1/3: Extracting book data...
+2026-11-22 11:08:52 | INFO | src.extract | Starting search for: Red Rising
+2026-11-22 11:08:52 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-22 11:08:53 | INFO | src.api_client | Success. Open Library returned 912 matches.
+2026-11-22 11:08:53 | INFO | src.extract | Retrieved 5 books for 'Red Rising'
+2026-11-22 11:08:53 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-22 11:08:53 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-22 11:08:55 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-22 11:08:55 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-22 11:08:55 | INFO | src.extract | Starting search for: The Stormlight Archive
+2026-11-22 11:08:55 | INFO | src.api_client | Searching Open Library for 'The Stormlight Archive'
+2026-11-22 11:08:56 | INFO | src.api_client | Success. Open Library returned 31 matches.
+2026-11-22 11:08:56 | INFO | src.extract | Retrieved 5 books for 'The Stormlight Archive'
+2026-11-22 11:08:56 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-22 11:08:56 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-22 11:08:57 | INFO | src.api_client | Success. Open Library returned 91 matches.
+2026-11-22 11:08:57 | INFO | src.extract | Retrieved 5 books for 'Throne of Glass'
+2026-11-22 11:08:57 | INFO | src.extract | Starting search for: Dune
+2026-11-22 11:08:57 | INFO | src.api_client | Searching Open Library for 'Dune'
+2026-11-22 11:08:59 | INFO | src.api_client | Success. Open Library returned 48275 matches.
+2026-11-22 11:08:59 | INFO | src.extract | Retrieved 5 books for 'Dune'
+2026-11-22 11:08:59 | INFO | src.extract | Starting search for: The Bloodsworn Saga
+2026-11-22 11:08:59 | INFO | src.api_client | Searching Open Library for 'The Bloodsworn Saga'
+2026-11-22 11:09:00 | INFO | src.api_client | Success. Open Library returned 3 matches.
+2026-11-22 11:09:00 | INFO | src.extract | Retrieved 3 books for 'The Bloodsworn Saga'
+2026-11-22 11:09:00 | INFO | src.extract | Extraction complete. Total books collected: 28
+2026-11-22 11:09:00 | INFO | __main__ | Extraction finished.
+2026-11-22 11:09:00 | INFO | __main__ | Step 2/3: Cleaning book data...
+2026-11-22 11:09:00 | INFO | src.clean | Cleaning complete. Records remaining: 25
+2026-11-22 11:09:00 | INFO | __main__ | Cleaning finished. Rows ready to save: 25
+2026-11-22 11:09:00 | INFO | __main__ | Step 3/3: Saving data to the database...
+2026-11-22 11:09:00 | INFO | src.database | Connecting to database: C:\Users\clari\OneDrive\AutoData Solutions\Fantasy-Book-Intelligence-Hub\data\fantasy_books.db
+2026-11-22 11:09:00 | INFO | src.database | Saved 25 rows to the 'books' table.
+2026-11-22 11:09:00 | INFO | src.database | Database connection closed.
+2026-11-22 11:09:00 | INFO | __main__ | Saving finished.
+2026-11-22 11:09:00 | INFO | __main__ | === Pipeline completed successfully ===
+2026-11-22 11:13:05 | INFO | __main__ | === Pipeline started ===
+2026-11-22 11:13:05 | INFO | __main__ | Step 1/3: Extracting book data...
+2026-11-22 11:13:05 | INFO | src.extract | Starting search for: Red Rising
+2026-11-22 11:13:05 | INFO | src.api_client | Searching Open Library for 'Red Rising'
+2026-11-22 11:13:06 | INFO | src.api_client | Success. Open Library returned 912 matches.
+2026-11-22 11:13:06 | INFO | src.extract | Retrieved 5 books for 'Red Rising'
+2026-11-22 11:13:06 | INFO | src.extract | Starting search for: The Poppy War
+2026-11-22 11:13:06 | INFO | src.api_client | Searching Open Library for 'The Poppy War'
+2026-11-22 11:13:07 | INFO | src.api_client | Success. Open Library returned 104 matches.
+2026-11-22 11:13:07 | INFO | src.extract | Retrieved 5 books for 'The Poppy War'
+2026-11-22 11:13:07 | INFO | src.extract | Starting search for: The Stormlight Archive
+2026-11-22 11:13:07 | INFO | src.api_client | Searching Open Library for 'The Stormlight Archive'
+2026-11-22 11:13:08 | INFO | src.api_client | Success. Open Library returned 31 matches.
+2026-11-22 11:13:08 | INFO | src.extract | Retrieved 5 books for 'The Stormlight Archive'
+2026-11-22 11:13:08 | INFO | src.extract | Starting search for: Throne of Glass
+2026-11-22 11:13:08 | INFO | src.api_client | Searching Open Library for 'Throne of Glass'
+2026-11-22 11:13:09 | INFO | src.api_client | Success. Open Library returned 91 matches.
+2026-11-22 11:13:09 | INFO | src.extract | Retrieved 5 books for 'Throne of Glass'
+2026-11-22 11:13:09 | INFO | src.extract | Starting search for: Dune
+2026-11-22 11:13:09 | INFO | src.api_client | Searching Open Library for 'Dune'
+2026-11-22 11:13:11 | INFO | src.api_client | Success. Open Library returned 48275 matches.
+2026-11-22 11:13:11 | INFO | src.extract | Retrieved 5 books for 'Dune'
+2026-11-22 11:13:11 | INFO | src.extract | Starting search for: The Bloodsworn Saga
+2026-11-22 11:13:11 | INFO | src.api_client | Searching Open Library for 'The Bloodsworn Saga'
+2026-11-22 11:13:12 | INFO | src.api_client | Success. Open Library returned 3 matches.
+2026-11-22 11:13:12 | INFO | src.extract | Retrieved 3 books for 'The Bloodsworn Saga'
+2026-11-22 11:13:12 | INFO | src.extract | Extraction complete. Total books collected: 28
+2026-11-22 11:13:12 | INFO | __main__ | Extraction finished.
+2026-11-22 11:13:12 | INFO | __main__ | Step 2/3: Cleaning book data...
+2026-11-22 11:13:12 | INFO | src.clean | Cleaning complete. Records remaining: 24
+2026-11-22 11:13:12 | INFO | __main__ | Cleaning finished. Rows ready to save: 24
+2026-11-22 11:13:12 | INFO | __main__ | Step 3/3: Saving data to the database...
+2026-11-22 11:13:12 | INFO | src.database | Connecting to database: C:\Users\clari\OneDrive\AutoData Solutions\Fantasy-Book-Intelligence-Hub\data\fantasy_books.db
+2026-11-22 11:13:12 | INFO | src.database | Saved 24 rows to the 'books' table.
+2026-11-22 11:13:12 | INFO | src.database | Database connection closed.
+2026-11-22 11:13:12 | INFO | __main__ | Saving finished.
+2026-11-22 11:13:12 | INFO | __main__ | === Pipeline completed successfully ===
